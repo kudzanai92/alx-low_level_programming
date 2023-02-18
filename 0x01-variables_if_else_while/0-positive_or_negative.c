@@ -2,12 +2,11 @@
 #include <time.h>
 /* more headers goes there */
 #include <stdio.h>
-
 /* betty style doc for function main goes there */
 /**
  * main - main function
  *
- * Result: Always 0
+ * Return: Always 0
  */
 int main(void)
 {
