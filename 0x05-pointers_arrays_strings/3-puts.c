@@ -1,4 +1,4 @@
-#inlude "main.h"
+#include "main.h"
 
 /**
  * _puts - prints a string
@@ -12,5 +12,5 @@ void _puts(char *str)
 	{
 	_putchar(*str);
 	}
-	_putchar('\n');
+	puts('\n');
 }
