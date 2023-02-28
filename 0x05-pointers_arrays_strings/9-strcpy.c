@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcpy - function that copies the string pointed 
+ * _strcpy - function that copies the string pointed
  * @dest: the string is copied into this pointer
  * @src: the string is copied from this pointer
  * Return: The function returns a string copy
@@ -20,6 +20,6 @@ char *_strcpy(char *dest, char *src)
 		dest[i] = src[i];
 	}
 	dest[ln] = '\0';
-	
-	return (dust);
+
+	return (dest);
 }
