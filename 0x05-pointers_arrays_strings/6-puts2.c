@@ -7,15 +7,17 @@
 
 void puts2(char *str)
 {
+
 	int ln = 0, i = 0, j;
-	char *str_v != '0';
+
+	char *str_v = str;
 
 	while (*str_v != '\0')
 	{
 		str_v++;
 		ln++;
 	}
-	i + ln - 1;
+	i = ln - 1;
 	for (j = 0; j <= i; j++)
 	{
 		if (j % 2 == 0)
