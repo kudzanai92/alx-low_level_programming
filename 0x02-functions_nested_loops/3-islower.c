@@ -3,10 +3,9 @@
 /**
  * _islower - functiont to print the lower case
  *
- * c: parameter to be printed
+ * @c: parameter to be printed
  *
- * Return: 1 if there is a lower case
- * and 0
+ * Return: 1 if there is a lower case and 0
  */
 
 int _islower(int c)
