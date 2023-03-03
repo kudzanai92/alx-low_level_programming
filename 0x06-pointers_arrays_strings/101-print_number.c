@@ -28,19 +28,21 @@ void print_number(int n)
 	while (power > 0)
 	{
 		if (power > 9)
+		{
 			if (!neg)
 				_putchar((n / power % 10) + '0');
 			else
 				_putchar((n / power % 10) * -1 + '0');
-			
+
 			power /= 10;
-	}
-	if (power == 1)
-	{
-		if (neg)
-			_putchar((n % 10) * -1 + '0');
-		else
-			_putchar(n % 10 + '0');
-		power = 0;
+		}
+		if (power == 1)
+		{
+			if (neg)
+				_putchar((n % 10) * -1 + '0');
+			else
+				_putchar(n % 10 + '0');
+			power = 0;
+		}
 	}
 }
