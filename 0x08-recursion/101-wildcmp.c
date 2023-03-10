@@ -1,20 +1,26 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _puts_recursion - function that prints a string,
- * @s: input
- * Return: 1
+ * wildcmp - compares two string and returns 1
+ * if the strings be considered identical, return 0
+ * @s1: the normal string
+ * @s2: another string
+ *
+ * Return: 1 if identical, else 0
  */
- 
-void _puts_recursion(char *s)
+
+int wildcmp(char *s1 char *s2)
 {
-	if (n < 1) return;
-	else
-	{
-		_putchar("%d", n);
-		_recursion(n - 1);
-		_putchar("%d", n);
-	}
-	_putchar('\n');
+	if (*s2 == '\0' && *s1 == '\0')
+		return (1);
+
+	if (*s2 == '*' && *(s2 + 1) != '\0' && *s1 == '\0')
+		return (0);
+	if (*s1 == *s2)
+		return (wildcmp(s1 + 1, s2 + 1));
+
+	if (*s2 == '*')
+	return (wildcmp(s1, s2 + 1) || wildcmp(s1 + 1, s2));
+
+	return (0);
 }
