@@ -1,18 +1,13 @@
 #include "main.h"
-
 /**
- * _puts_recursion - function that prints a string,
- * @s: input
- * Return: 0
+ * _puts - prints a string, followed by a new line, to stdout
+ * @str: string to print
  */
-
-void _puts_recursion(char *s)
+void _puts(char *str)
 {
-	if (*s)
+	while (*str != '\0')
 	{
-		_putchar(*s);
-		_puts_recursion(s + 1);
+		_putchar(*str++);
 	}
-	else
-		_putchar('\n');
+	_putchar('\n');
 }
