@@ -42,5 +42,5 @@ int **alloc_grid(int width, int height)
 			_2D_array[clm_index][row_index] = 0;
 	}
 
-	return (twoD);
+	return (_2D_array);
 }
