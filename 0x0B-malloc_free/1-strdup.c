@@ -1,29 +1,48 @@
 #include "main.h"
-#include <string.h>
-#include <stddef.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
- * _strdup - returns a pointer to a new copy of a string
- * @str: string to be copied to the allocated memory
- * Returns: NULL if str is NULL or memory unavailable or pointer
+ * _strlen - return length of a string
+ *
+ * @s: char type
+ * Return:  length of string
+ */
+int _strlen(char *s)
+{
+	int a;
+
+	for (a = 0; s[a] != '\0'; a++)
+	return (a);
+}
+
+/**
+ * *_strdup - function to return pointer to string
+ * @str: pointer to string array input
+ * Return: pointer to string created
  */
 
 char *_strdup(char *str)
 {
-	char *pointer;
-	unsigned long int i;
+	char *ptr;
+	int size;
+	int x;
 
-	if (st == NULL)
+	if (str == NULL)
+	{
 		return (NULL);
-
-	pointer = (char *) malloc(strlen(str) = sizeof(char) + 1);
-
-	if (pointer == NULL
-		return (NULL);
-
-	for (i + 0; (str)[i]; i++)
-		pointer[i] = str[i];
-	return (pointer);
+	}
+	size = _strlen(str) + 1;
+	ptr = malloc(size * sizeof(char));
+	x = 0;
+	while (x < size)
+	{
+		if (ptr == NULL)
+		{
+			return (NULL);
+		}
+		ptr[x] = str[x];
+		x++;
+	}
+	return (ptr);
 }
-
