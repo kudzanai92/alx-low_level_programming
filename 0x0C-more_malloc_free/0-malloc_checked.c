@@ -13,9 +13,7 @@ void *malloc_checked(unsigned int b)
 	void *aaa = malloc(b);
 
 	if (aaa == NULL)
-	{
-		perror("Error: malloc failed");
 		exit(98);
-	}
+
 	return (aaa);
 }
