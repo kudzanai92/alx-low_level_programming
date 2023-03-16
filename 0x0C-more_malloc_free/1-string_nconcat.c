@@ -8,7 +8,7 @@
  * @s2: the source, the string to concatenate
  * @n: specify how many bytes needed to concatenate s1 and s2.
  * Return: if n >= s2 the string to be concatenated,
- * 		either s1 or s2 = NULL the string shall be NULL
+ * either s1 or s2 = NULL the string shall be NULL
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
