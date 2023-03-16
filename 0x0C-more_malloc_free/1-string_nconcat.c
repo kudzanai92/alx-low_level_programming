@@ -23,8 +23,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	ln1 = (int)strln(s1);
-	ln2 = (int)strln(s2);
+	ln1 = (int)strlen(s1);
+	ln2 = (int)strlen(s2);
 	if (n > ln2)
 		n = ln2;
 
